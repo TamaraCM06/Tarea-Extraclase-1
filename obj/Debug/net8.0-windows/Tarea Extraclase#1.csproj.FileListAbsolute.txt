@@ -1,0 +1,14 @@
+C:\Users\tvcm0\OneDrive\Escritorio\Datos\Tarea Extraclase#1\bin\Debug\net8.0-windows\Tarea Extraclase#1.exe
+C:\Users\tvcm0\OneDrive\Escritorio\Datos\Tarea Extraclase#1\bin\Debug\net8.0-windows\Tarea Extraclase#1.deps.json
+C:\Users\tvcm0\OneDrive\Escritorio\Datos\Tarea Extraclase#1\bin\Debug\net8.0-windows\Tarea Extraclase#1.runtimeconfig.json
+C:\Users\tvcm0\OneDrive\Escritorio\Datos\Tarea Extraclase#1\bin\Debug\net8.0-windows\Tarea Extraclase#1.dll
+C:\Users\tvcm0\OneDrive\Escritorio\Datos\Tarea Extraclase#1\bin\Debug\net8.0-windows\Tarea Extraclase#1.pdb
+C:\Users\tvcm0\OneDrive\Escritorio\Datos\Tarea Extraclase#1\obj\Debug\net8.0-windows\Tarea Extraclase#1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tvcm0\OneDrive\Escritorio\Datos\Tarea Extraclase#1\obj\Debug\net8.0-windows\Tarea Extraclase#1.AssemblyInfoInputs.cache
+C:\Users\tvcm0\OneDrive\Escritorio\Datos\Tarea Extraclase#1\obj\Debug\net8.0-windows\Tarea Extraclase#1.AssemblyInfo.cs
+C:\Users\tvcm0\OneDrive\Escritorio\Datos\Tarea Extraclase#1\obj\Debug\net8.0-windows\Tarea Extraclase#1.csproj.CoreCompileInputs.cache
+C:\Users\tvcm0\OneDrive\Escritorio\Datos\Tarea Extraclase#1\obj\Debug\net8.0-windows\Tarea Extraclase#1.dll
+C:\Users\tvcm0\OneDrive\Escritorio\Datos\Tarea Extraclase#1\obj\Debug\net8.0-windows\refint\Tarea Extraclase#1.dll
+C:\Users\tvcm0\OneDrive\Escritorio\Datos\Tarea Extraclase#1\obj\Debug\net8.0-windows\Tarea Extraclase#1.pdb
+C:\Users\tvcm0\OneDrive\Escritorio\Datos\Tarea Extraclase#1\obj\Debug\net8.0-windows\Tarea Extraclase#1.genruntimeconfig.cache
+C:\Users\tvcm0\OneDrive\Escritorio\Datos\Tarea Extraclase#1\obj\Debug\net8.0-windows\ref\Tarea Extraclase#1.dll
