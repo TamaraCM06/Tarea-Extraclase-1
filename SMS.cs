@@ -4,9 +4,10 @@ using System.Text;
 
 namespace Tarea_Extraclase_1;
 
-
-    public partial class SMS : Form
+//  Clase principal - define que se trabaja de modo winforms (Windows Forms)
+    public partial class SMS : Form  
     {
+        // Definir variables para la interfaz, nueva instancia de clase chat y puerto local
         private Label? MensajeL;
         private Label? PuertoDestinoL;
         private Label? PuertoLocalL;
@@ -19,13 +20,14 @@ namespace Tarea_Extraclase_1;
         private int PuertoLocal;
         private Chat? nuevoChat;
 
+//  Base de clase principal e inicializador de interfaz
     public SMS()
         {
             InitializeComponent();
             IniciarInterfaz();
         }
     
-
+//      Funcion que inicializa la interfaz
         private void IniciarInterfaz()
         {
             //Labels de Interfaz
@@ -62,7 +64,7 @@ namespace Tarea_Extraclase_1;
             };
             this.Controls.Add(MensajesEntrantesL);
 
-            //Textbox de la interfaz
+            //Cajas de texto de la interfaz
 
             EscribirMensajeT = new TextBox
             {
@@ -108,7 +110,7 @@ namespace Tarea_Extraclase_1;
         
         //iniciar chat
 
-        PuertoLocal = 8000;
+//      Conseguir numero de puerto insertado en terminal y asignarlo a puerto local
         string[] args = Environment.GetCommandLineArgs();
         if (args.Length > 2 & int.TryParse(args[2], out int puertoParsed))
         {
@@ -119,13 +121,14 @@ namespace Tarea_Extraclase_1;
         nuevoChat.OnMsjRecibido += Chat_OnMsjRecibido;
         }
 
-
+//  Accion al presionar boton de enviar
     void EnviarClick(object sender, EventArgs e)
         {
+//      Obtiene mensaje escrito 
         string mensaje = EscribirMensajeT.Text;
         if (int.TryParse(PuertoDestinoT.Text, out int puerto))
         {
-                
+//          Envia mensaje a puerto destino
             nuevoChat.EnviandoMensaje($"De puerto {PuertoLocal}: {mensaje}", puerto);
             MensajesEntrantesT.AppendText("Tú: " + mensaje + Environment.NewLine);
             EscribirMensajeT.Clear();
@@ -136,6 +139,7 @@ namespace Tarea_Extraclase_1;
         }
         }
 
+//  Permite que instancia que ejecute esta funcion imprima el mensaje enviado a este, en caja de texto de mensajes entrantes
     private void Chat_OnMsjRecibido(string mensaje)
     {
         Invoke(new Action(() =>
@@ -146,12 +150,14 @@ namespace Tarea_Extraclase_1;
     }
     }
         
+// Clase que maneja conexion de puertos y emision de mensajes
 public class Chat
     {
         private Socket socketEnvia;
         private Socket socketRecibe;
         private int puertoRecibe;
 
+//      Base de clase Chat - Define socket receptor y emisor
         public Chat(int puertoRecibe)
         {
             socketEnvia = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
@@ -159,7 +165,7 @@ public class Chat
             this.puertoRecibe = puertoRecibe;
             RecibiendoMensaje();
         }
-
+//      Establece conexion de socket emisor - convierte mensaje en bytes y lo envia a puerto receptor
         public void EnviandoMensaje(string mensaje, int puerto)
         {
             try
@@ -177,6 +183,7 @@ public class Chat
             }
         }
 
+//      Siempre busca mensajes y en caso de recibir uno, lo decodifica e imprime en la caja de texto de mensajes recibidos
         public void RecibiendoMensaje()
         {
             Task.Run(() =>   //Permite que mensajes de varios clientes a la vez
