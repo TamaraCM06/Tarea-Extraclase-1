@@ -12,3 +12,4 @@ C:\Users\tvcm0\OneDrive\Escritorio\Datos\Tarea Extraclase#1\obj\Debug\net8.0-win
 C:\Users\tvcm0\OneDrive\Escritorio\Datos\Tarea Extraclase#1\obj\Debug\net8.0-windows\Tarea Extraclase#1.pdb
 C:\Users\tvcm0\OneDrive\Escritorio\Datos\Tarea Extraclase#1\obj\Debug\net8.0-windows\Tarea Extraclase#1.genruntimeconfig.cache
 C:\Users\tvcm0\OneDrive\Escritorio\Datos\Tarea Extraclase#1\obj\Debug\net8.0-windows\ref\Tarea Extraclase#1.dll
+C:\Users\tvcm0\OneDrive\Escritorio\Datos\Tarea Extraclase#1\obj\Debug\net8.0-windows\Tarea Extraclase#1.sourcelink.json
